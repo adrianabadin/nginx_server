@@ -16,4 +16,4 @@ services:
   backend:
     image: i5backend
     build: 
-      context:
+      context: .
