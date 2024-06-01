@@ -3,7 +3,7 @@ services:
     image: nginxserver
     build:
       context: .
-      dockerfile: dockerfile
+      dockerfile: Dockerfile
     ports:
       - "80:80"
       - "443:443"
