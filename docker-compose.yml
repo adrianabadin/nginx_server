@@ -1,7 +1,9 @@
 services:
   nginx:
-    image: nginx
-    build: .
+    image: nginxserver
+    build:
+      context: .
+      dockerfile: dockerfile
     ports:
       - "80:80"
       - "443:443"
