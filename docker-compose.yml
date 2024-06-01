@@ -5,7 +5,8 @@ services:
       - "80:80"
       - "443:443"
     restart: always
-    watch: 
-      - action: rebuild
-        path: .
+    develop:
+      watch: 
+        - action: rebuild
+          path: .
     
