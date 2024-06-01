@@ -8,8 +8,12 @@ services:
       - "80:80"
       - "443:443"
     restart: always
+    command: certbot --nginx -d i5api.thecodersteam.com
     develop:
       watch: 
         - action: rebuild
           path: .
-    
+  backend:
+    image: i5backend
+    build: 
+      context:
